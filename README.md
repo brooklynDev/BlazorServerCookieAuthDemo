@@ -8,7 +8,7 @@ This project demonstrates how one might implement Cookie Authentication using Bl
 
 #### Prerequisites: 
 
-This sample application is build to use SQL Server. Additionally, it uses EF Core, so you'll need the ef core tools installed. You can do that by running the following in your terminal:
+This sample application is built to use SQL Server. Additionally, it uses EF Core, so you'll need the ef core tools installed. You can do that by running the following in your terminal:
 
 `dotnet tool install --global dotnet-ef`
 
