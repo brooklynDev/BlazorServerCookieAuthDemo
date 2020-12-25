@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BlazorServerAuthDemo.Web.Data;
 using BlazorServerAuthDemo.Web.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -37,7 +36,6 @@ namespace BlazorServerAuthDemo.Web
             services.AddHttpContextAccessor();
             services.AddScoped<HttpContextAccessor>();
             services.AddTransient<LoginService>();
-            services.AddSingleton<WeatherForecastService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
