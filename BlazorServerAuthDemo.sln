@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerAuthDemo.Web", "BlazorServerAuthDemo.Web\BlazorServerAuthDemo.Web.csproj", "{BC808447-EBC1-4E49-BB8C-063A1AEB725B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerAuthDemo.Data", "BlazorServerAuthDemo.Data\BlazorServerAuthDemo.Data.csproj", "{E3F51141-FF30-4C1A-A7FB-F060AC32EBC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC808447-EBC1-4E49-BB8C-063A1AEB725B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC808447-EBC1-4E49-BB8C-063A1AEB725B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC808447-EBC1-4E49-BB8C-063A1AEB725B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC808447-EBC1-4E49-BB8C-063A1AEB725B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F51141-FF30-4C1A-A7FB-F060AC32EBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F51141-FF30-4C1A-A7FB-F060AC32EBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F51141-FF30-4C1A-A7FB-F060AC32EBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F51141-FF30-4C1A-A7FB-F060AC32EBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

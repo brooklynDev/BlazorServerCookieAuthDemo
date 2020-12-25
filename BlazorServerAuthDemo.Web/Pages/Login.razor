@@ -1,0 +1,16 @@
+@page "/Login"
+
+<div class="row justify-content-md-center">
+    <div class="col col-lg-4 jumbotron">
+        <h3>Login</h3>
+        <input @bind="Email" type="text" class="form-control" placeholder="Email"/>
+        <br/>
+        <input @bind="Password" type="password" class="form-control" placeholder="Password"/>
+        <br/>
+        <button @onclick="OnLoginClick" class="btn btn-primary btn-block btn-lg">Login</button>
+        @if (ShowErrorMessage)
+        {
+            <h5 class="text-danger">Invalid credentials.</h5>
+        }
+    </div>
+</div>

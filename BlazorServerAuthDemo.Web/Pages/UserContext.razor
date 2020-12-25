@@ -1,0 +1,23 @@
+<CascadingValue Value="@_currentUserTask">
+    @ChildContent
+</CascadingValue>
+
+@code
+{
+    [CascadingParameter]
+    Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    [Inject]
+    LoginService LoginService { get; set; }
+
+    private Task<User> _currentUserTask;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    protected override void OnInitialized()
+    {
+        _currentUserTask = authenticationStateTask.ContinueWith(t => t.Result.User.Identity.Name)
+            .ContinueWith(t => LoginService.GetUser(t.Result)).Unwrap();
+    }
+}

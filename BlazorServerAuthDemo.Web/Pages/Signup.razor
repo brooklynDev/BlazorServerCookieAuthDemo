@@ -1,0 +1,17 @@
+@page "/Signup"
+
+<div class="row justify-content-md-center">
+    <div class="col col-lg-4 jumbotron">
+        <h3>Signup</h3>
+        <input @bind="FirstName" type="text" class="form-control" placeholder="First Name"/>
+        <br/>
+        <input @bind="LastName" type="text" class="form-control" placeholder="Last Name"/>
+        <br/>
+        <input @bind="Email" type="text" class="form-control" placeholder="Email"/>
+        <br/>
+        <input @bind="Password" type="password" class="form-control" placeholder="Password"/>
+        <br/>
+        <button @onclick="OnSignupClick" class="btn btn-primary btn-block btn-lg">Signup</button>
+
+    </div>
+</div>
