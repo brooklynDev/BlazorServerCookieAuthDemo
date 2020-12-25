@@ -44,5 +44,13 @@ namespace BlazorServerAuthDemo.Web.Controllers
                 new ClaimsIdentity(claims, "Cookies", "user", "role")));
             return new LoginResult(true);
         }
+
+        [HttpGet]
+        [Route("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await _contextAccessor.HttpContext.SignOutAsync();
+            return Redirect("/");
+        }
     }
 }
