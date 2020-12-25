@@ -9,8 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorServerAuthDemo.Web.Controllers
 {
-    
-    
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
