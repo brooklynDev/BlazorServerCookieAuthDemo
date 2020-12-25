@@ -17,7 +17,7 @@ namespace BlazorServerAuthDemo.Web.Pages
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            if (firstRender)
+            if (!firstRender)
             {
                 return;
             }
