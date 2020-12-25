@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace BlazorServerAuthDemo.Data
 {
-    public class AfterHoursContextFactory : IDesignTimeDbContextFactory<AuthDemoDataContext>
+    public class AuthDemoContextFactory : IDesignTimeDbContextFactory<AuthDemoDataContext>
     {
         public AuthDemoDataContext CreateDbContext(string[] args)
         {
