@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace BlazorServerAuthDemo.Data
 {
@@ -8,6 +9,8 @@ namespace BlazorServerAuthDemo.Data
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        
+        [JsonIgnore]
         public string PasswordHash { get; set; }
     }
 }
