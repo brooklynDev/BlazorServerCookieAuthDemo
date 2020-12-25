@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using BlazorServerAuthDemo.Web.Data;
-using BlazorServerAuthDemo.Web.Services;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Http;
 using Microsoft.JSInterop;
 
 namespace BlazorServerAuthDemo.Web.Pages
