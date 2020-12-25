@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace BlazorServerAuthDemo.Web.Pages
 {
-    [Authorize]
+    // [Authorize]
     public partial class Secret
     {
         [CascadingParameter] 

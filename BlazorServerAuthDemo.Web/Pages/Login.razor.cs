@@ -1,10 +1,12 @@
 using System.Threading.Tasks;
 using BlazorServerAuthDemo.Web.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 namespace BlazorServerAuthDemo.Web.Pages
 {
+    [AllowAnonymous]
     public partial class Login
     {
         [Inject]
