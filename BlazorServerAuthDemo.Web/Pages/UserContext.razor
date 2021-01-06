@@ -17,7 +17,12 @@
 
     protected override void OnInitialized()
     {
-        _currentUserTask = authenticationStateTask.ContinueWith(t => t.Result.User.Identity.Name)
-            .ContinueWith(t => LoginService.GetUser(t.Result)).Unwrap();
+        _currentUserTask = GetUser();
+    }
+
+    private async Task<User> GetUser()
+    {
+        var authenticationState = await authenticationStateTask;
+        return await LoginService.GetUser(authenticationState.User.Identity.Name);
     }
 }
